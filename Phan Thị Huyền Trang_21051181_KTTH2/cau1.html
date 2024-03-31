@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="cau1.css">
+</head>
+<body>
+      
+    <div class="container">
+      <h1>Laptop dành cho học trực tuyến</h1>
+      <p>Do ảnh hưởng của đại dịch COVID trong năm học này, nhiều sinh viên ở một số tỉnh, thành phố như Hà Nội đã phải chuyển sang học trực tuyến để đảm bảo sức khỏe và an toàn cho mình.</p>
+      
+      <div class="laptop-container">
+        <div class="laptop">
+                <img src="https://surfacecu.com.vn/wp-content/uploads/2020/05/surface-laptop-3-a1-1.jpg" alt="Laptop 1">
+                <br>
+                <br>
+                <br>
+                <p>SURFACE LAPTOP3 13.5 </p>
+                <p>Thông tin sản phẩm :</p>
+                <p>RAM: 8GB</p>
+                <p>Ổ cứng: 256GB SSD</p>
+                <a href="#" class="read-more">Đọc tiếp</a>
+         </div>
+        <div class="laptop">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2evJBSI7ZA4Tk5rN5NMR78xC5VvGpVwGX7uMqyD277rsmV97vDmeI370IflXjiEb79nc5dlxQJkM1BIl76bJQ1M5bAzV_HtFVRs9GoOiFk2r2w7k5hjxU6V_BetNrd7UHLfqN1EOj9bY/s1600/nb+stop+minas.jpg" alt="LAPTOP SAMSUNG X180">
+          <p>LAPTOP SAMSUNG X180</p>
+          <p>Thông tin sản phẩm :</p>
+          <p>RAM: 16GB</p>
+          <p>Ổ cứng: 512GB SSD</p>
+          <a href="#" class="read-more">Đọc tiếp</a>
+        </div>
+        <div class="laptop">
+          <img src="https://laptopam.com/wp-content/uploads/2023/06/lenovo-laptop-thinkpad-x1-carbon-gen-9-14-subseries-hero.png" alt="THINKPAD X1 CARBON GEN 9">
+          <p>THINKPAD X1 CARBON GEN 9</p>
+          <p>Thông tin sản phẩm :</p>
+          <p>RAM: 12GB</p>
+          <p>Ổ cứng: 1TB HDD</p>
+          <a href="#" class="read-more">Đọc tiếp</a>
+        </div>
+      </div>
+    </div>
+    
+
+    <section id="contact">
+        <h1>LIÊN HỆ</h1>
+        <div id="top-color-splash"></div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h2>Thông tin</h2>
+                <div class="info">
+                    <i class="fa fa-map-marker"></i>
+                    <p>  
+                        <figure>
+                            <img src="https://i.pinimg.com/236x/cb/a5/6c/cba56c5092e61caf6bfc85f6d986116b.jpg" style =" width: 33px;"> KPL Trung. Tại Thủ Đại, Tp. HCM
+                           <p>
+                            <p>
+                                <img src="https://e7.pngegg.com/pngimages/298/243/png-clipart-email-address-computer-icons-mail-miscellaneous-angle.png" style =" width: 35px;">    GMAIL@edu.vn
+                               </p>
+                            <img src="https://w7.pngwing.com/pngs/356/440/png-transparent-iphone-computer-icons-telephone-email-telephone-electronics-text-mobile-phones.png" style =" width: 35px;">   (+84) 3454644435
+                           </p> 
+                        
+                        </figure>
+                </div>
+                <div class="info">
+                    <i class="fa fa-envelope"></i>
+                </div>
+                
+            </div>
+            <div class="contact-form">
+                <h3>Hãy liên lạc với chúng tôi bất cứ khi nào!</h3>
+                <form action="#" onsubmit="return confirmFormSubmit();">
+                    <label for="fullname">Họ và tên:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Nhập họ và tên">
+                    <br>
+                    <label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="Nhập email">
+                    <br>
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại">
+                    <br>
+                    <label for="message">Nội dung:</label>
+                    <textarea id="message" name="message" rows="5" placeholder=""></textarea>
+                    <br>
+                    <button type="submit">Gửi tin nhắn </button>
+            </div>
+        </div>
+    </section>
+    <script>
+    function confirmFormSubmit() {
+        var name = document.getElementById("fullname").value;
+        var email = document.getElementById("email").value;
+        var phoneNumber = document.getElementById("phone").value;
+        var feedback = document.getElementById("message").value;
+
+        var message = "Thông tin của bạn:\n\n" +
+            "Họ và tên: " + name + "\n" +
+            "Email: " + email + "\n" +
+            "Số điện thoại: " + phoneNumber + "\n" +
+            "Nội dung góp ý: " + feedback;
+
+        if (confirm(message)) {
+            // If user confirms, submit the form
+            return true;
+        } else {
+            // If user cancels, prevent form submission
+            return false;
+        }
+    }
+    </script>
+    </body>
+    </html>

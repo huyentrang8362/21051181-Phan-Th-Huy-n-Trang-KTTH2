@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Đánh Giá</title>
+<link rel="stylesheet" href="cau2.css">
+</head>
+<body>
+
+<h2>ĐÁNH GIÁ</h2>
+
+<form action="#" method="post">
+    <label for="name">Họ và Tên:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    <br>
+    <label for="email">Email:</label> <br>
+    <input type="email" id="email" name="email" required></textarea><br>
+    <br>
+    
+    <label for="rating">Đánh Giá:</label><br>
+    <select id="rating" name="rating" required>
+        <option value="5">★★★★★</option>
+        <option value="4">★★★★</option>
+        <option value="3">★★★</option>
+        <option value="2">★★</option>
+        <option value="1">★</option>
+    </select><br>
+    
+    <label for="comment">Bình Luận:</label><br>
+    <textarea id="comment" name="comment" rows="4" required></textarea><br><br>
+    
+    <input type="submit" value="Gửi Đánh Giá">
+</form>
+
+<script src="bt2.js"></script>
+
+</body>
+</html>
